@@ -501,14 +501,18 @@ jobs:
         with:
            name: eden-aarch64-light-appimage
            
-#      - uses: actions/download-artifact@v4.3.0
-#        with:
-#           name: eden-android-Replace
+      - uses: actions/download-artifact@v4.3.0
+        with:
+           name: eden-android-Replace
         
-#      - uses: actions/download-artifact@v4.3.0
-#        with:
-#           name: eden-android-Coexist
-        
+      - uses: actions/download-artifact@v4.3.0
+        with:
+           name: eden-android-Coexist
+
+      - uses: actions/download-artifact@v4.3.0
+        with:
+           name: eden-android-Optimised
+           
       - uses: actions/download-artifact@v4.3.0
         with:
            name: eden-windows-msvc-x86_64
@@ -566,4 +570,4 @@ jobs:
           fail_on_unmatched_files: false
           make_latest: true
           files: |
-            *.AppImage*, *.AppBundle*, *.7z, *.tar.xz
+            *.AppImage*, *.AppBundle*, *.7z, *.tar.xz, *.apk
